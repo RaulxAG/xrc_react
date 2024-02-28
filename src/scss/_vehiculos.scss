@@ -1,0 +1,50 @@
+.btnAdd {
+    border: 2.5px solid var(--sombra);
+    background-color: var(--button);
+    transition: all .3s linear;
+    text-decoration: none;
+    color: #222;
+}
+
+.btnAdd:hover {
+    background-color: var(--buttonHover);
+}
+
+.tarjetaVehiculo {
+    width: 85%;
+    height: 160px;
+    margin-bottom: .5rem;
+    padding: 10px 40px;
+
+    .tarjetaPropiedad {
+        height: 100%;
+        text-align: center;    
+    }
+
+    .btonVehiculo {
+        border: none;
+        border-radius: 15px;
+        text-decoration: none;
+        color: #222;
+    }
+
+    .btonVehiculo:first-child {
+        background-color: var(--button);
+    }
+
+    .btonVehiculo:nth-child(2) {
+        background-color: var(--editar);
+    }
+
+    p:first-child {
+        font-weight: bold;
+        text-decoration: underline;
+    }
+}
+
+.btonVehiculo {
+    border: none;
+    border-radius: 15px;
+    text-decoration: none;
+    color: #222;
+}

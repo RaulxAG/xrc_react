@@ -1,0 +1,35 @@
+.sectionInicio {
+    width: 100%;
+    height: 92vh;
+    position: relative;
+
+    article {
+        background-color: var(--sombra);
+        color: white;
+        font-weight: bold;
+        font-size: 2rem;
+        width: 60%;
+        height: 70%;
+        border-radius: 60px;
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+    }
+}
+
+.sectionInicio::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url('../assets/img/celica.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px) opacity(.6);
+    z-index: -1;
+}

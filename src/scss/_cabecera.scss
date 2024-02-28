@@ -1,0 +1,19 @@
+header {
+    height: 8vh;
+    color: var(--primario);
+
+    h1 {
+        letter-spacing: -4px;
+    }
+}
+
+.navegacion {
+    text-align: center;
+    list-style: none;
+    font-weight: bold;
+}
+
+.link {
+    text-decoration: none;
+    color: var(--primario);
+}
