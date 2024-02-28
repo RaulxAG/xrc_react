@@ -1,20 +1,73 @@
+.bienvenidaInicio {
+    height: 100vh;
+    background-color: var(--sombra);
+    position: relative;
+
+    .btn-inferior {
+        position: absolute;
+        top: 80%;
+        z-index: 3;
+    }
+}
+
+.link {
+    font-weight: bold;
+}
+
+.driftCarousel {
+    height: 95vh;
+    position: relative;
+}
+
+.carouselFoto {
+    position: absolute;
+}
+
+.driftCar {
+    right: 10rem;
+    animation: to-right 2.5s ease-out;
+    filter: drop-shadow(10px 15px 10px rgba(0, 0, 0, 1));
+}
+
+.smoke {
+    right: 5rem;
+    bottom: 9rem;
+    animation: to-right-smoke 2.5s ease-out;
+}
+
+.dust {
+    width: 300%;
+    animation: up-right 8s ease-in-out infinite;
+    z-index: 1;
+}
+
+
 .sectionInicio {
     width: 100%;
-    height: 92vh;
+    height: 100vh;
     position: relative;
 
     article {
         background-color: var(--sombra);
         color: white;
         font-weight: bold;
-        font-size: 2rem;
-        width: 60%;
-        height: 70%;
+        font-size: 22px;
+        width: 80%;
         border-radius: 60px;
+        padding: 20px 10px;
 
         h1 {
-            font-size: 2.5rem;
+            margin-top: 10px;
+            margin: auto;
+            width: 90%;
+            font-size: 28px;
             font-weight: bold;
+        }
+
+        p {
+            margin: auto;
+            width: 90%;
+            text-align: justify;
         }
     }
 }
@@ -32,4 +85,42 @@
     background-position: center;
     filter: blur(5px) opacity(.6);
     z-index: -1;
+}
+
+.button {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    background-color: #454545;
+    color: #d5d8e1;
+    padding: 13px 30px;
+    border-radius: 50px;
+    overflow: hidden;
+    cursor: pointer;
+    border: 3px solid #631ae1;
+    font-weight: bold;
+}
+
+.button--bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #631ae1;
+    clip-path: circle(0 at top left); /*Radio 0 en centro*/
+    transition: clip-path 0.5s;
+}
+
+.button--bg:hover::before {
+    clip-path: circle(150% at top left);
+    z-index: -1;
+}
+
+.button--bg:hover {
+    box-shadow: 0 0 10px #e11ada;
+    color: white;
+    border: 3px solid #e11ada;
+    z-index: 1;
 }

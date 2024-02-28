@@ -57,6 +57,14 @@ export function Vehiculos() {
             </div>
             
             <ul className="mt-4">
+                {vehiculos.length <= 0 && (
+                    <div class="d-flex mt-5 justify-content-center">
+                        <div class="spinner-border" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
+                    </div>
+                )}
+                
                 {vehiculos.map(vehiculo => (
                     <li key={vehiculo.id} className="tarjetaVehiculo d-flex container justify-content-between align-items-center bg-dark text-white font-bold rounded-5">
                         <div className="tarjetaPropiedad d-flex container align-items-center justify-content-evenly me-5">

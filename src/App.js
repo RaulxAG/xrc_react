@@ -16,6 +16,7 @@ import { Reservas } from "./components/Reservas";
 import { DetalleVehiculo } from "./components/DetalleVehiculo";
 import { FormularioReserva } from "./components/FormularioReserva";
 import { Eventos } from "./components/Eventos";
+import { Contacto } from "./components/Contacto";
 
 function App() {
   const [userInLocalStorage, setUserInLocalStorage] = useState(null);
@@ -44,45 +45,61 @@ function App() {
         ))}
       </ul> */}
         <Router>
-          <header className="container-fluid d-flex align-items-center justify-content-between bg-dark">
-            {/* <img src="/assets/img/logo2.png" /> */}
-            <Link className="link" to="/home"><h1>X-RC</h1></Link>
+          
+        <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
+          <div class="container-fluid d-flex">
+            <div>
+              <Link className="link" to="/home"><h1>X-RC</h1></Link>
+            </div>
             
+            <div>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
 
-            <ul className="navegacion d-flex align-items-center">
-              <li className="m-2 fs-5">
-                <Link className="link" to="/home">Inicio</Link>
-              </li>
+              
+            </div>
+            <div class="ms-3 collapse navbar-collapse text-center" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li className="m-2 fs-5">
+                    <Link className="link" to="/home">Inicio</Link>
+                  </li>
 
-              {userInLocalStorage && (
-                <li className="m-2 fs-5">
-                  <Link className="link" to="/vehiculos">Vehiculos</Link>
-                </li>
-              )}
+                  {userInLocalStorage && (
+                    <li className="m-2 fs-5">
+                      <Link className="link" to="/vehiculos">Vehiculos</Link>
+                    </li>
+                  )}
 
-              {userInLocalStorage && (
-                <li className="m-2 fs-5">
-                  <Link className="link" to="/reservas">Mis alquileres</Link>
-                </li>
-              )}
+                  {userInLocalStorage && (
+                    <li className="m-2 fs-5">
+                      <Link className="link" to="/reservas">Mis alquileres</Link>
+                    </li>
+                  )}
 
-              <li className="m-2 fs-5">
-                <Link className="link" to="/eventos">Eventos</Link>
-              </li>
+                  <li className="m-2 fs-5">
+                    <Link className="link" to="/eventos">Eventos</Link>
+                  </li>
 
-              {!userInLocalStorage && (
-                <li className="m-2 fs-5">
-                  <Link className="link" to="/login">Login</Link>
-                </li>
-              )}
+                  <li className="m-2 fs-5">
+                    <Link className="link" to="/contacto">Contacto</Link>
+                  </li>
 
-              {userInLocalStorage && (
-                <li className="m-2 fs-5">
-                  <Link className="link" to="/logout">Logout</Link>
-                </li>
-              )}
-            </ul>
-          </header>
+                  {!userInLocalStorage && (
+                    <li className="m-2 fs-5">
+                      <Link className="link" to="/login">Login</Link>
+                    </li>
+                  )}
+
+                  {userInLocalStorage && (
+                    <li className="m-2 fs-5">
+                      <Link className="link" to="/logout">Logout</Link>
+                    </li>
+                  )}        
+                </ul>
+              </div>
+          </div>
+        </nav>
 
         <Routes>
           <Route path="/" element={<Inicio />} ></Route>
@@ -94,6 +111,7 @@ function App() {
           <Route path="/reservas" element={<Reservas />} ></Route>
           <Route path="/agregar_reserva/:idVehiculo" element={<FormularioReserva />} ></Route>
           <Route path="/eventos" element={<Eventos />} ></Route>
+          <Route path="/contacto" element={<Contacto />} ></Route>
           <Route path="/login" element={<LoginUser onLogin={handleLogin} />} ></Route>
           <Route path="/logout" element={<LogoutUser onLogout={handleLogout} />} ></Route>
         </Routes>
