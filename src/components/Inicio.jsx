@@ -35,12 +35,128 @@ export function Inicio() {
                     </button>
                 </div>
                 <div className="btn-inferior d-flex flex-column w-100 align-items-center fs-4">
-                    <a href="#inicio" className="border border-3 border-dark btn btn-dark">
+                    <a href="#categorias" className="btn btn-dark">
                         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="white" class="bi bi-chevron-down" viewBox="0 0 16 16">
                             <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
                         </svg>
                     </a>
                 </div>
+            </section>
+
+            <section id="categorias" className="container-fluid w-75 containerCategorias d-flex flex-wrap">
+                <article class="rounded box mb-5">
+                    <div class="imgBx">
+                        <img src="./assets/img/css/rallyCard.jpg" alt="" />
+                    </div>
+                    <div class="layer layer1"></div>
+                    <div class="layer layer2"></div>
+                    <div class="contentBx">
+                        <div>
+                            <h2>Post Title One</h2>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Voluptate cupiditate porro quia ex, quo impedit sit nemo
+                                fugiat ullam sed aspernatur magni neque rem eaque quae! 
+                                Debitis non nulla minima.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="rounded box mb-5">
+                    <div class="imgBx">
+                        <img src="./assets/img/css/driftCard.jpg" alt="" />
+                    </div>
+                    <div class="layer layer1"></div>
+                    <div class="layer layer2"></div>
+                    <div class="contentBx">
+                        <div>
+                            <h2>Post Title One</h2>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Voluptate cupiditate porro quia ex, quo impedit sit nemo
+                                fugiat ullam sed aspernatur magni neque rem eaque quae! 
+                                Debitis non nulla minima.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="rounded box mb-5">
+                    <div class="imgBx">
+                        <img src="./assets/img/css/superCard.jpeg" alt="" />
+                    </div>
+                    <div class="layer layer1"></div>
+                    <div class="layer layer2"></div>
+                    <div class="contentBx">
+                        <div>
+                            <h2>Post Title One</h2>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Voluptate cupiditate porro quia ex, quo impedit sit nemo
+                                fugiat ullam sed aspernatur magni neque rem eaque quae! 
+                                Debitis non nulla minima.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="rounded box mb-5">
+                    <div class="imgBx">
+                        <img src="./assets/img/css/usdmCard.jpg" alt="" />
+                    </div>
+                    <div class="layer layer1"></div>
+                    <div class="layer layer2"></div>
+                    <div class="contentBx">
+                        <div>
+                            <h2>Post Title One</h2>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Voluptate cupiditate porro quia ex, quo impedit sit nemo
+                                fugiat ullam sed aspernatur magni neque rem eaque quae! 
+                                Debitis non nulla minima.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="rounded box mb-5">
+                    <div class="imgBx">
+                        <img src="./assets/img/css/jdmCard.jpg" alt="" />
+                    </div>
+                    <div class="layer layer1"></div>
+                    <div class="layer layer2"></div>
+                    <div class="contentBx">
+                        <div>
+                            <h2>Post Title One</h2>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Voluptate cupiditate porro quia ex, quo impedit sit nemo
+                                fugiat ullam sed aspernatur magni neque rem eaque quae! 
+                                Debitis non nulla minima.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="rounded box mb-5">
+                    <div class="imgBx">
+                        <img src="./assets/img/css/edmCard.jpeg" alt="" />
+                    </div>
+                    <div class="layer layer1"></div>
+                    <div class="layer layer2"></div>
+                    <div class="contentBx">
+                        <div>
+                            <h2>Post Title One</h2>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Voluptate cupiditate porro quia ex, quo impedit sit nemo
+                                fugiat ullam sed aspernatur magni neque rem eaque quae! 
+                                Debitis non nulla minima.
+                            </p>
+                        </div>
+                    </div>
+                </article>
             </section>
 
             <section id="inicio" className="sectionInicio d-flex flex-column align-items-center justify-content-center">
