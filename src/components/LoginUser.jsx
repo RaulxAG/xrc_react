@@ -50,7 +50,7 @@ export function LoginUser({ onLogin }) {
                 {errors.password && <span className="alert alert-warning" role="alert">Debes introducir una contraseña de mas de 6 carácteres</span>}
                 
                 <div className="align-self-center">
-                    <div className="d-flex">
+                    <div className="d-flex flex-column flex-md-row">
                         <div className="form-floating">
                             <input type="text" className="form-control" name="dni" id="dni" placeholder="DNI" {...register('dni', {required: true})} />
                             <label htmlFor="dni">DNI</label>
@@ -63,7 +63,7 @@ export function LoginUser({ onLogin }) {
                     </div>
                 </div>
 
-                <div className="align-self-center d-flex">
+                <div className="align-self-center d-flex flex-column flex-md-row">
                     <div className="align-self-center mt-3">
                         <input type="submit" value="Iniciar Sesión" id="submit" className="btnEnviar bg-dark rounded-3 p-2" />
                     </div>

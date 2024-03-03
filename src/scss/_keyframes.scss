@@ -38,3 +38,25 @@
         transform: translateY(-30%);
     }
 }
+
+@keyframes bordeAnimado {
+    0% {
+        transform: translateY(-100%) translate(-200%);
+    }
+
+    25% {
+        transform: translateY(-130%) translate(0);
+    }
+
+    50% {
+        transform: translateY(0) translate(0);
+    }
+
+    75% {
+        transform: translateY(0) translate(-200%);
+    }
+
+    100% {
+        transform: translateY(-100%) translate(-200%);
+    }
+}

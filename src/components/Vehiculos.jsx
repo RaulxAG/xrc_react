@@ -39,7 +39,7 @@ export function Vehiculos() {
                 <h2>Catálogo de vehículos</h2>
             </div>
 
-            <div className='container d-flex justify-content-between'>
+            <div className='container d-flex flex-column flex-md-row justify-content-between'>
                 <input
                     type="search"
                     name="query"
@@ -56,7 +56,7 @@ export function Vehiculos() {
                 </select>
             </div>
             
-            <ul className="mt-4">
+            <ul className="container-fluid mt-4">
                 {vehiculos.length <= 0 && (
                     <div class="d-flex mt-5 justify-content-center">
                         <div class="spinner-border" role="status">

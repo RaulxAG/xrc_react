@@ -9,14 +9,18 @@ export function Reservas() {
 
     return (
         <>
-            <div className="d-flex justify-content-center mt-4">
-                {/* <Link to="/agregar_reserva" className="btnAdd p-3 rounded-4">
-                    Añadir
-                </Link> */}
+            <div className="container text-center mt-4">
                 <h2>Mis reservas</h2>
             </div>
 
-            <ul className="mt-4">
+            <ul className="container-fluid mt-4">
+                {reservas.length <= 0 && (
+                    <div class="d-flex mt-5 justify-content-center">
+                        <div class="spinner-border" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
+                    </div>
+                )}
                 {reservas
                     .filter(reserva => reserva.fk_dni === dniActual) // Filtrar por dniActual
                     .map(reserva => (
