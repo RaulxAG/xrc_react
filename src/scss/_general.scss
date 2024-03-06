@@ -1,12 +1,15 @@
 :root {
-    --bg: #97a3a3;
+    // --bg: #97a3a3;
+    --bg: #b0c1ce;
     --primario: #cdcdcd;
     --secundario: #353e4b;
     --button: #78afaf;
     --buttonHover: #618f8f;
     --delete: #af7898;
     --editar: #788eaf;
-    --sombra: #1d1d1dcc;
+    --sombra: rgba(29, 29, 29, 0.8);
+    --morado: #631ae1;
+    --rosa: #e11ada;
 }
 
 * {

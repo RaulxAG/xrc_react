@@ -56,7 +56,7 @@ export function Vehiculos() {
                 </select>
             </div>
             
-            <ul className="mt-4">
+            <ul className="container-fluid mt-4">
                 {vehiculos.length <= 0 && (
                     <div class="d-flex mt-5 justify-content-center">
                         <div class="spinner-border" role="status">
