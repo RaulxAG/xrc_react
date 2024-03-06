@@ -39,7 +39,7 @@ export function Vehiculos() {
                 <h2>Catálogo de vehículos</h2>
             </div>
 
-            <div className='container d-flex justify-content-between'>
+            <div className='container d-flex flex-column flex-md-row justify-content-between'>
                 <input
                     type="search"
                     name="query"
@@ -66,16 +66,16 @@ export function Vehiculos() {
                 )}
                 
                 {vehiculos.map(vehiculo => (
-                    <li key={vehiculo.id} className="tarjetaVehiculo d-flex container justify-content-between align-items-center bg-dark text-white font-bold rounded-5">
+                    <li key={vehiculo.id} className="tarjetaVehiculo d-flex flex-column flex-lg-row container justify-content-between align-items-center bg-dark text-white font-bold rounded-5">
                         <div className="tarjetaPropiedad d-flex container align-items-center justify-content-evenly me-5">
                             <div className="d-flex flex-column align-items-center justify-content-between p-3">
                                 <img src={`${vehiculo.imagen}`} width={220} />
                             </div>
-                            <div className="d-flex flex-column align-items-center justify-content-between p-3">
+                            <div className="d-none d-lg-block d-flex flex-column align-items-center justify-content-between p-3">
                                 <p>Marca</p>
                                 <p>{vehiculo.marca}</p>
                             </div>
-                            <div className="d-flex flex-column align-items-center justify-content-between p-3">
+                            <div className="d-none d-lg-block d-flex flex-column align-items-center justify-content-between p-3">
                                 <p>Modelo</p>
                                 <p>{vehiculo.modelo}</p>
                             </div>
@@ -96,7 +96,7 @@ export function Vehiculos() {
                             <p>Velocidad Máx.</p>
                             <p>{vehiculo.velocidad_max} km/h</p>
                         </div> */}
-                        <div className="d-flex align-items-center justify-content-center">
+                        <div className="container d-flex align-items-center justify-content-center">
                             <Link to={`/detalle_vehiculo/${vehiculo.id}`} className="btonVehiculo m-2 p-3 rounded-4">
                                 Detalle
                             </Link>

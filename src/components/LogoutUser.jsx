@@ -23,9 +23,9 @@ export function LogoutUser({ onLogout }) {
                     <span className="alert alert-primary mt-3" role="alert">{mensaje}</span>
                 )}
 
-                <div className='mt-2 w-50 d-flex align-items-center justify-content-evenly'>
-                    <Link to="/logout" className="btnEnviar w-25 bg-success rounded-3 p-4 text-white text-center" onClick={cerrarSesion}>Si</Link>
-                    <Link to="/" className="btnEnviar w-25 bg-danger rounded-3 p-4 text-white text-center">No</Link>
+                <div className='mt-2 w-50 d-flex flex-column flex-md-row align-items-center justify-content-evenly'>
+                    <Link to="/logout" className="container btnEnviar m-2 bg-success rounded-3 p-4 text-white text-center" onClick={cerrarSesion}>Si</Link>
+                    <Link to="/" className="container btnEnviar m-2 bg-danger rounded-3 p-4 text-white text-center">No</Link>
                 </div>
             </div>
         </>

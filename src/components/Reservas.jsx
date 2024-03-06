@@ -20,20 +20,20 @@ export function Reservas() {
                 {reservas
                     .filter(reserva => reserva.fk_dni === dniActual) // Filtrar por dniActual
                     .map(reserva => (
-                    <li key={reserva.id} className="tarjetaVehiculo d-flex container justify-content-between align-items-center bg-dark text-white font-bold rounded-5">
+                    <li key={reserva.id} className="tarjetaVehiculo d-flex flex-column flex-lg-row container justify-content-between align-items-center bg-dark text-white font-bold rounded-5">
                         <div className="tarjetaPropiedad d-flex container align-items-center justify-content-evenly me-5">
                             <div className="d-flex flex-column align-items-center justify-content-between p-3">
                                 <img src={reserva.fk_vehiculo['imagen']} width={250}/>
                             </div>
-                            <div className="d-flex flex-column align-items-center justify-content-between p-3">
+                            <div className="d-none d-md-block d-flex flex-column align-items-center justify-content-between p-3">
                                 <p>Vehiculo</p>
                                 <p>{reserva.fk_vehiculo['marca']} {reserva.fk_vehiculo['modelo']}</p>
                             </div>
-                            <div className="d-flex flex-column align-items-center justify-content-between p-3">
+                            <div className="d-none d-md-block d-flex flex-column align-items-center justify-content-between p-3">
                                 <p>Usuario</p>
                                 <p>{reserva.fk_dni}</p>
                             </div>
-                            <div className="d-flex flex-column align-items-center justify-content-between p-3">
+                            <div className="d-none d-md-block d-flex flex-column align-items-center justify-content-between p-3">
                                 <p>Fecha</p>
                                 <p>{new Date(reserva.fecha).toLocaleDateString('es-ES')}</p>
                             </div>

@@ -47,7 +47,7 @@ export function RegisterUser() {
                 {errors.edad && <span className="alert alert-warning" role="alert">Debes ser mayor de edad</span>}
                 
                 <div className="align-self-center">
-                    <div className="d-flex">
+                    <div className="d-flex flex-column flex-lg-row">
                         <div className="form-floating">
                             <input type="text" className="form-control" name="dni" id="dni" placeholder="DNI" {...register('dni', {required: true})} />
                             <label htmlFor="dni">DNI</label>
@@ -64,7 +64,7 @@ export function RegisterUser() {
                         </div>
                     </div>
 
-                    <div className="d-flex">
+                    <div className="d-flex flex-column flex-lg-row">
                         <div className="form-floating">
                             <select className="form-select" name="provincia" id="provincia" {...register('provincia', {required: true})} >
                                 <option selected>Seleccionar</option>
@@ -91,7 +91,7 @@ export function RegisterUser() {
                     </div>
                 </div>
 
-                <div className="align-self-center d-flex">
+                <div className="align-self-center d-flex flex-column flex-lg-row mb-5">
                     <div className="align-self-center mt-3">
                         <input type="submit" value="Registrar" id="submit" className="btnEnviar bg-dark rounded-3 p-2" />
                     </div>

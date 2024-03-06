@@ -14,7 +14,7 @@ export function Eventos() {
             <ul className="mt-4">
                 {eventos.map(evento => (
                     <li key={evento.id} className="mt-5 d-flex container justify-content-between align-items-center bg-dark text-white font-bold rounded-5 p-5">
-                        <div className="d-flex container align-items-center justify-content-evenly me-5">
+                        <div className="d-flex  flex-column flex-lg-row text-center container align-items-center justify-content-evenly me-5">
                             
                             <img src={`${evento.imagen}`} width={220} />
                             
