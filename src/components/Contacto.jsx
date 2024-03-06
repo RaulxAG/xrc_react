@@ -7,19 +7,19 @@ export function Contacto() {
                 </div>
                 
                 <form className="container d-flex flex-column align-items-center justify-content-center mt-3 mt-lg-0">
-                    <div class="mb-3 w-100">
-                        <label for="exampleInputEmail1" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" />
+                    <div className="mb-3 w-100">
+                        <label for="exampleInputEmail1" className="form-label">Email</label>
+                        <input type="email" className="form-control" id="InputEmail1" aria-describedby="emailHelp" />
                     </div>
 
-                    <div class="mb-4 w-100">
-                        <label for="exampleInputEmail1" class="form-label">Nombre</label>
-                        <input type="text" class="form-control" id="InputNombre" />
+                    <div className="mb-4 w-100">
+                        <label for="exampleInputEmail1" className="form-label">Nombre</label>
+                        <input type="text" className="form-control" id="InputNombre" />
                     </div>
 
-                    <div class="input-group">
-                        <span class="input-group-text bg-body-secondary">Mensaje</span>
-                        <textarea class="form-control" aria-label="Mensaje"></textarea>
+                    <div className="input-group">
+                        <span className="input-group-text bg-body-secondary">Mensaje</span>
+                        <textarea className="form-control" aria-label="Mensaje"></textarea>
                     </div>
 
                     <div className="input-group d-flex justify-content-end mt-4 mb-sm-5 mb-lg-0">

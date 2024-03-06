@@ -15,9 +15,9 @@ export function Reservas() {
 
             <ul className="container-fluid mt-4">
                 {reservas.length <= 0 && (
-                    <div class="d-flex mt-5 justify-content-center">
-                        <div class="spinner-border" role="status">
-                            <span class="visually-hidden">Loading...</span>
+                    <div className="d-flex mt-5 justify-content-center">
+                        <div className="spinner-border" role="status">
+                            <span className="visually-hidden">Loading...</span>
                         </div>
                     </div>
                 )}

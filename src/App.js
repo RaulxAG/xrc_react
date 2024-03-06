@@ -46,21 +46,21 @@ function App() {
       </ul> */}
         <Router>
           
-        <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
-          <div class="container-fluid d-flex">
+        <nav className="navbar navbar-dark navbar-expand-lg bg-dark">
+          <div className="container-fluid d-flex">
             <div>
               <Link className="link" to="/home"><h1>X-RC</h1></Link>
             </div>
             
             <div>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+              <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span className="navbar-toggler-icon"></span>
               </button>
 
               
             </div>
-            <div class="ms-3 collapse navbar-collapse text-center" id="navbarNavDropdown">
-                <ul class="navbar-nav">
+            <div className="ms-3 collapse navbar-collapse text-center" id="navbarNavDropdown">
+                <ul className="navbar-nav">
                   <li className="iconoNavegacion me-3 ms-3 mt-2" title="Inicio">
                     <Link className="link" to="/home">
                       Inicio
