@@ -6,10 +6,20 @@
   --buttonHover: #618f8f;
   --delete: #af7898;
   --editar: #788eaf;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+  --sombra: #1d1d1dcc; }
+=======
+>>>>>>> ff54052785c2bd50f24807c5a553e14b87f82ca1
   --sombra: rgba(29, 29, 29, 0.8);
   --morado: #631ae1;
   --rosa: #e11ada;
 }
+<<<<<<< HEAD
+=======
+>>>>>>> 413f3a2bd35bc09797a4d61872204c649c73d269
+>>>>>>> ff54052785c2bd50f24807c5a553e14b87f82ca1
 
 * {
   margin: 0;
@@ -43,9 +53,19 @@ header {
 
 .link {
   text-decoration: none;
+<<<<<<< HEAD
   color: var(--primario);
   font-weight: bold;
 }
+=======
+<<<<<<< HEAD
+  color: var(--primario); }
+=======
+  color: var(--primario);
+  font-weight: bold;
+}
+>>>>>>> 413f3a2bd35bc09797a4d61872204c649c73d269
+>>>>>>> ff54052785c2bd50f24807c5a553e14b87f82ca1
 
 .bienvenidaInicio {
   height: 95vh;
@@ -56,6 +76,10 @@ header {
     top: 80%;
     z-index: 3; }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> ff54052785c2bd50f24807c5a553e14b87f82ca1
 .link {
   font-weight: bold; }
 
@@ -77,6 +101,10 @@ header {
   animation: to-right-smoke 2.5s ease-out; }
 
 .dust {
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> ff54052785c2bd50f24807c5a553e14b87f82ca1
 .elementCarousel {
   height: 95vh;
   position: relative;
@@ -95,10 +123,18 @@ header {
   animation: to-right-smoke 2.5s ease-out;
 }
 .elementCarousel .dust {
+<<<<<<< HEAD
+=======
+>>>>>>> 413f3a2bd35bc09797a4d61872204c649c73d269
+>>>>>>> ff54052785c2bd50f24807c5a553e14b87f82ca1
   width: 300%;
   animation: up-right 8s ease-in-out infinite;
   z-index: 1; }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> ff54052785c2bd50f24807c5a553e14b87f82ca1
 .sectionInicio {
   width: 100%;
   height: 100vh;
@@ -121,6 +157,10 @@ header {
       margin: auto;
       width: 90%;
       text-align: justify; }
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> ff54052785c2bd50f24807c5a553e14b87f82ca1
 .finalInicio {
   position: relative;
   padding-top: 20vh;
@@ -146,6 +186,10 @@ header {
   width: 90%;
   text-align: center;
 }
+<<<<<<< HEAD
+=======
+>>>>>>> 413f3a2bd35bc09797a4d61872204c649c73d269
+>>>>>>> ff54052785c2bd50f24807c5a553e14b87f82ca1
 
 .finalInicio::after {
   content: "";
@@ -171,11 +215,22 @@ header {
   border-radius: 50px;
   overflow: hidden;
   cursor: pointer;
+<<<<<<< HEAD
   border: 3px solid #631ae1;
   font-weight: bold; }
   border: 3px solid var(--morado);
   font-weight: bold;
 }
+=======
+<<<<<<< HEAD
+  border: 3px solid #631ae1;
+  font-weight: bold; }
+=======
+  border: 3px solid var(--morado);
+  font-weight: bold;
+}
+>>>>>>> 413f3a2bd35bc09797a4d61872204c649c73d269
+>>>>>>> ff54052785c2bd50f24807c5a553e14b87f82ca1
 
 .button--bg::before {
   content: "";
@@ -184,14 +239,27 @@ header {
   left: 0;
   width: 100%;
   height: 100%;
+<<<<<<< HEAD
   background-color: #631ae1;
   clip-path: circle(0 at top left);
   /*Radio 0 en centro*/
   transition: clip-path 0.5s;
+=======
+<<<<<<< HEAD
+  background-color: #631ae1;
+  clip-path: circle(0 at top left);
+  /*Radio 0 en centro*/
+  transition: clip-path 0.5s; }
+=======
+>>>>>>> ff54052785c2bd50f24807c5a553e14b87f82ca1
   background-color: var(--morado);
   clip-path: circle(0 at top left); /*Radio 0 en centro*/
   transition: clip-path 0.5s;
 }
+<<<<<<< HEAD
+=======
+>>>>>>> 413f3a2bd35bc09797a4d61872204c649c73d269
+>>>>>>> ff54052785c2bd50f24807c5a553e14b87f82ca1
 
 .button--bg:hover::before {
   clip-path: circle(150% at top left);
@@ -208,11 +276,22 @@ header {
 .button--bg:hover, .btn-inferior > a:hover {
   box-shadow: 0 0 10px var(--rosa);
   color: white;
+<<<<<<< HEAD
   border: 3px solid #e11ada;
   z-index: 1;
   border: 3px solid var(--rosa);
   z-index: 1;
 }
+=======
+<<<<<<< HEAD
+  border: 3px solid #e11ada;
+  z-index: 1; }
+=======
+  border: 3px solid var(--rosa);
+  z-index: 1;
+}
+>>>>>>> 413f3a2bd35bc09797a4d61872204c649c73d269
+>>>>>>> ff54052785c2bd50f24807c5a553e14b87f82ca1
 
 .containerCategorias {
   padding: 40px;
@@ -438,7 +517,16 @@ header {
   50% {
     transform: translate(30%) translateY(-30%); }
   100% {
+<<<<<<< HEAD
     transform: translate(0) translateY(0); } }
+=======
+<<<<<<< HEAD
+    transform: translate(0) translateY(0); } }
+=======
+    transform: translate(0) translateY(0);
+  }
+}
+>>>>>>> ff54052785c2bd50f24807c5a553e14b87f82ca1
 @keyframes bounce {
   0% {
     transform: translateY(-30%);
@@ -467,5 +555,9 @@ header {
     transform: translateY(-100%) translate(-200%);
   }
 }
+<<<<<<< HEAD
+=======
+>>>>>>> 413f3a2bd35bc09797a4d61872204c649c73d269
+>>>>>>> ff54052785c2bd50f24807c5a553e14b87f82ca1
 
 /*# sourceMappingURL=main.css.map */
