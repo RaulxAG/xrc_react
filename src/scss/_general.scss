@@ -1,0 +1,24 @@
+:root {
+    // --bg: #97a3a3;
+    --bg: #b0c1ce;
+    --primario: #cdcdcd;
+    --secundario: #353e4b;
+    --button: #78afaf;
+    --buttonHover: #618f8f;
+    --delete: #af7898;
+    --editar: #788eaf;
+    --sombra: rgba(29, 29, 29, 0.8);
+    --morado: #631ae1;
+    --rosa: #e11ada;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--bg);
+}

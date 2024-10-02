@@ -1,0 +1,36 @@
+header {
+    height: 8vh;
+    color: var(--primario);
+
+    h1 {
+        letter-spacing: -4px;
+    }
+}
+
+.navegacion {
+    text-align: center;
+    list-style: none;
+    font-weight: bold;
+}
+
+.iconoNavegacion {
+    // background-color: var(--secundario);
+    
+    .link {
+        text-align: center;
+        padding: 10px;
+        border-radius: 20px !important;
+        transition: all .3s linear;
+    }
+
+
+    .link:hover {
+        background-color: var(--morado);
+    }
+}
+
+.link {
+    text-decoration: none;
+    color: var(--primario);
+    font-weight: bold;
+}
